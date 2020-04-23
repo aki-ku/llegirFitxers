@@ -7,9 +7,9 @@ for nomFitxer in fitxers:
     #nomFitxer conté el nom de l'arxiu que està en el directori curses 
 
     #TODO heu de posar a la variable fitxer l'obertura per lectura del fitxer de nom nomFitxer.
-    fitxer =open("curses/" + nomFitxer + ",r")
+    fitxer =open("curses/" + nomFitxer, "r")
 
     #Heu de pintar les tres primeres posicions 
-    print("Or ", fitxer.read())
-    print("Plata ", fitxer.read())
-    print("Bronze ", fitxer.read())
+    print("Or ", fitxer.readline())
+    print("Plata ", fitxer.readline())
+    print("Bronze ", fitxer.readline())
